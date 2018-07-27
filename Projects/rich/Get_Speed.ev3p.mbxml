@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_040_Wait">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Gets forward and reverse speed for a specificed index</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Index" DisplayName="Index" Direction="Input" Identification="Identification_040_Index.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="0" MaxValue="10" />
+        <ParamInfo Name="Forward" DisplayName="Forward" Direction="Output" Identification="Identification_220_Steering_Straight_Forward.png" DataType="Single" />
+        <ParamInfo Name="Reverse" DisplayName="Reverse" Direction="Output" Identification="Identification_225_Steering_Straight_Backward.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_058_UltrasonicSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Left_Wheel_Speed " DisplayName="Left_Wheel_Speed " Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
+        <ParamInfo Name="Right_Wheel_Speed" DisplayName="Right_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
+        <ParamInfo Name="Comparison" DisplayName="Comparison" Direction="Input" Identification="Identification_034_ComparisonType_LessThan.png" DataType="Single" DefaultValue="4" />
+        <ParamInfo Name="Distance" DisplayName="Distance" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="20" Configuration="SliderHorizontal.custom" MinValue="0" MaxValue="255" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Version="1.0.2.10" xmlns="http://www.ni.com/SourceModel.xsd">
+    <Namespace Name="Project">
+        <VirtualInstrument IsTopLevel="false" IsReentrant="false" Version="1.0.2.0" OverridingModelDefinitionType="X3VIDocument" xmlns="http://www.ni.com/VirtualInstrument.xsd">
+            <DataItem Name="Index" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="1" IsSelfSustaining="true" DefaultValue="0" />
+            <DataItem Name="Forward" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Output" CallIndex="0" IsSelfSustaining="true" DefaultValue="0" />
+            <DataItem Name="Reverse" DataType="Single" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Output" CallIndex="1" IsSelfSustaining="true" DefaultValue="0" />
+            <DataItem Name="SequenceIn" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="0" IsSelfSustaining="true" />
+            <DataItem Name="SequenceOut" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" DefaultTerminalDirection="Input" CallUsage="None" CallDirection="Output" CallIndex="2" IsSelfSustaining="true" />
+            <InterruptsToListenForDataItem Name="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" DataType="Int32" DefaultTerminalDirection="Output" CallUsage="None" CallDirection="Input" CallIndex="2" IsSelfSustaining="true" DefaultValue="0" />
+            <FrontPanel>
+                <fpruntime:FrontPanelCanvas xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:Model="clr-namespace:NationalInstruments.SourceModel.Designer;assembly=NationalInstruments.SourceModel" x:Name="FrontPanel" Model:DesignerSurfaceProperties.CanSnapToObjects="True" Model:DesignerSurfaceProperties.SnapToObjects="True" Model:DesignerSurfaceProperties.ShowSnaplines="True" Model:DesignerSurfaceProperties.ShowControlAdorners="True" Width="640" Height="480" />
+            </FrontPanel>
+            <BlockDiagram Name="__RootDiagram__">
+                <StartBlock Id="n1" Bounds="1602 938 14 14" Target="X3\.Lib:StartBlockTest">
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="1 0.5" Bounds="0 0 14 14" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 14 14 14" />
+                </StartBlock>
+                <ConfigurableMethodCall Id="n15" Bounds="1662 938 101 91" Target="X3\.Lib:GlobalGetNumericArray">
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="valueOut" Direction="Output" Wire="w8" DataType="Single[]" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="Speed_Forward">
+                        <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n6" Bounds="1763 938 163 91" Target="ArrayReadAtIndex\.vix">
+                    <ConfigurableMethodTerminal ConfiguredValue="[0]">
+                        <Terminal Id="arrayInNumeric" Direction="Input" Wire="w8" DataType="Single[]" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="Index" Direction="Input" Wire="w16" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="valueOut" Direction="Output" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w8" Joints="N(n15:valueOut) v(18) h(101) N(n6:arrayInNumeric)" />
+                <Wire Id="w10" Joints="N(n15:SequenceOut) N(n6:SequenceIn)" />
+                <ConfigurableMethodCall Id="n11" Bounds="1926 938 101 91" Target="X3\.Lib:GlobalGetNumericArray">
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="valueOut" Direction="Output" Wire="w15" DataType="Single[]" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="Speed_Reverse">
+                        <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w12" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w12" Joints="N(n6:SequenceOut) N(n11:SequenceIn)" />
+                <ConfigurableMethodCall Id="n13" Bounds="2027 938 163 91" Target="ArrayReadAtIndex\.vix">
+                    <ConfigurableMethodTerminal ConfiguredValue="[0]">
+                        <Terminal Id="arrayInNumeric" Direction="Input" Wire="w15" DataType="Single[]" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="Index" Direction="Input" Wire="w16" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="valueOut" Direction="Output" Wire="w19" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w15" Joints="N(n11:valueOut) v(22) h(101) N(n13:arrayInNumeric)" />
+                <Wire Id="w14" Joints="N(n11:SequenceOut) N(n13:SequenceIn)" />
+                <Wire Id="w17" Joints="N(n1:SequenceOut) h(23) v(21) N(n15:SequenceIn)" />
+                <ConfigurableMegaAccessor Id="n21" Bounds="1511 938 14 14" Target="X3\.Lib:ConfigurableMegaAccessor" FreshlyCreatedMyBlock="true" AccessorType="Input">
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="Index" Direction="Output" Wire="w16" DataType="Single" Hotspot="0 0.5" Bounds="0 14 14 14" />
+                    </ConfigurableMethodTerminal>
+                </ConfigurableMegaAccessor>
+                <ConfigurableMegaAccessor Id="n22" Bounds="2270 938 14 14" Target="X3\.Lib:ConfigurableMegaAccessor" FreshlyCreatedMyBlock="true" AccessorType="Output">
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="Forward" Direction="Input" Wire="w18" DataType="Single" Hotspot="1 0.5" Bounds="0 0 14 14" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="Reverse" Direction="Input" Wire="w19" DataType="Single" Hotspot="1 0.5" Bounds="0 14 14 14" />
+                    </ConfigurableMethodTerminal>
+                </ConfigurableMegaAccessor>
+                <Wire Id="w16" Joints="N(n21:Index) h(47) v(86.5) h(305) N(n6:Index) B(0) h(47) v(89) h(569) N(n13:Index)" />
+                <Wire Id="w18" Joints="N(n6:valueOut) v(38) h(400) v(-114) N(n22:Forward)" />
+                <Wire Id="w19" Joints="N(n13:valueOut) v(11) h(95.5) v(-73) N(n22:Reverse)" />
+            </BlockDiagram>
+        </VirtualInstrument>
+    </Namespace>
+</SourceFile>
