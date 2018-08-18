@@ -34,3 +34,6 @@
 # EV3 projects
 *.ev3
 *.ev3s
+
+# Compresse files
+*.zip
