@@ -13,3 +13,11 @@ http://nightgnomes.azurewebsites.net
 SWERVE robot club website
 
 http://swerverobotics.org
+
+Core values
+
+https://www.firstinspires.org/robotics/fll/core-values
+
+Rubrics
+
+https://www.firstinspires.org/sites/default/files/uploads/fll/first-lego-league-rubrics.pdf
