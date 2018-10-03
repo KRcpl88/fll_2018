@@ -172,6 +172,30 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="176 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w18" Joints="N(n12:SequenceOut) N(n17:SequenceIn)" />
+                <Comment Bounds="75 -94 151 80" SizeMode="User" AttachStyle="Free">
+                    <Content>The color move will move the robot forward until its sees the blck line</Content>
+                </Comment>
+                <Comment Bounds="235 -93 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will make the robot turn 90 degrees to the left</Content>
+                </Comment>
+                <Comment Bounds="434 -94 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will stop the robot when it is 20 CM away from the wall</Content>
+                </Comment>
+                <Comment Bounds="817 -92 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will make the robot move foward 4 rotations</Content>
+                </Comment>
+                <Comment Bounds="283 123 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will make the robot turn 90 degrees to the left</Content>
+                </Comment>
+                <Comment Bounds="626 -94 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will make the robot turn 90 degrees to the left</Content>
+                </Comment>
+                <Comment Bounds="81 123 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will stop the robot when it is 10 CM away from the wall</Content>
+                </Comment>
+                <Comment Bounds="481 116 187 80" SizeMode="User" AttachStyle="Free">
+                    <Content>This will stop the robot when it is 10 CM away from the wall</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>
