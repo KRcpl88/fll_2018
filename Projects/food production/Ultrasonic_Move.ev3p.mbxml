@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
   <PolyGroups>
-    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_052_Gyro">
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_058_UltrasonicSensor">
       <Block>
         <Mode>MyBlock</Mode>
-        <Description>Turns (x) degrees using the gyro sensor.</Description>
+        <Description />
         <Reference Type="VILib" />
         <PaletteInfo Weight="0.5" />
         <ParamInfo Name="Left_Wheel_Speed" DisplayName="Left_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
         <ParamInfo Name="Right_Wheel_Speed" DisplayName="Right_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
-        <ParamInfo Name="Direction" DisplayName="Direction" Direction="Input" Identification="Identification_536_WaitForChange_Both.png" DataType="Single" DefaultValue="0" />
-        <ParamInfo Name="Angle" DisplayName="Angle" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-180" MaxValue="180" />
+        <ParamInfo Name="Comparison" DisplayName="Comparison" Direction="Input" Identification="Identification_034_ComparisonType_LessThan.png" DataType="Single" DefaultValue="4" />
+        <ParamInfo Name="Distance" DisplayName="Distance" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="20" Configuration="SliderHorizontal.custom" MinValue="0" MaxValue="255" />
       </Block>
     </PolyGroup>
   </PolyGroups>

@@ -4,13 +4,13 @@
     <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_052_Gyro">
       <Block>
         <Mode>MyBlock</Mode>
-        <Description>Turns (x) degrees using the gyro sensor.</Description>
+        <Description />
         <Reference Type="VILib" />
         <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Comparison" DisplayName="Comparison" Direction="Input" Identification="Identification_030_ComparisonType_Equal.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Angle" DisplayName="Angle" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" Configuration="SliderHorizontal.custom" MinValue="-999" MaxValue="999" />
         <ParamInfo Name="Left_Wheel_Speed" DisplayName="Left_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
         <ParamInfo Name="Right_Wheel_Speed" DisplayName="Right_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
-        <ParamInfo Name="Direction" DisplayName="Direction" Direction="Input" Identification="Identification_536_WaitForChange_Both.png" DataType="Single" DefaultValue="0" />
-        <ParamInfo Name="Angle" DisplayName="Angle" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-180" MaxValue="180" />
       </Block>
     </PolyGroup>
   </PolyGroups>

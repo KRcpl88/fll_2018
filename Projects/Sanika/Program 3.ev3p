@@ -119,6 +119,9 @@
                     <Wire Id="w17" Joints="N(n14:valueOut) v(30) h(101) N(n15:x)" />
                 </ConfigurableWhileLoop>
                 <Wire Id="w4" Joints="N(n1:SequenceOut) N(n2:SequenceIn)" />
+                <Comment Bounds="-103 -154 100 80" SizeMode="User" AttachStyle="Free">
+                    <Content></Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

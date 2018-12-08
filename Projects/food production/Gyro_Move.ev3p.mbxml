@@ -10,7 +10,7 @@
         <ParamInfo Name="Left_Wheel_Speed" DisplayName="Left_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
         <ParamInfo Name="Right_Wheel_Speed" DisplayName="Right_Wheel_Speed" Direction="Input" Identification="Identification_209_CurrentPower.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="100" />
         <ParamInfo Name="Direction" DisplayName="Direction" Direction="Input" Identification="Identification_536_WaitForChange_Both.png" DataType="Single" DefaultValue="0" />
-        <ParamInfo Name="Angle" DisplayName="Angle" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="-180" MaxValue="180" />
+        <ParamInfo Name="Angle" DisplayName="Angle" Direction="Input" Identification="Identification_278_MotorRotation.png" DataType="Single" DefaultValue="0" Configuration="SliderVertical.custom" MinValue="0" MaxValue="360" />
       </Block>
     </PolyGroup>
   </PolyGroups>
