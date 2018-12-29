@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_054_RotationSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>make the robot move straight using the gyro sencer for a fixed number of wheel rotations</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Direction" DisplayName="Direction" Direction="Input" Identification="Identification_279_OutputNumberDegrees.png" DataType="Single" DefaultValue="0" Configuration="SliderHorizontal.custom" MinValue="-180" MaxValue="180" />
+        <ParamInfo Name="Rotations" DisplayName="Rotations" Direction="Input" Identification="Identification_503_NumberRotations.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Speed" DisplayName="Speed" Direction="Input" Identification="Identification_202_Speed_Plus50.png" DataType="Single" DefaultValue="0" Configuration="SliderHorizontal.custom" MinValue="-100" MaxValue="100" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
