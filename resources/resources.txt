@@ -26,3 +26,6 @@ Machine Learning
 https://playground.tensorflow.org/ 
 https://cs.stanford.edu/people/karpathy/convnetjs/demo/regression.html
 http://caza.la/synaptic/#/
+
+https://channel9.msdn.com/Shows/AI-Show/Building-a-Pet-Detector-in-30-minutes-or-less
+https://www.bing.com/videos/search?q=lego+robot+reinforcment+learning&view=detail&mid=75134C59D7AF7C35BC3675134C59D7AF7C35BC36&FORM=VIRE
