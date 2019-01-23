@@ -55,7 +55,7 @@
                         </ConfigurableMethodCall>
                     </ConfigurableWhileLoop.BuiltInMethod>
                     <ConfigurableMethodCall Id="n13" Bounds="47 41 101 91" Target="GyroDegrees\.vix">
-                        <ConfigurableMethodTerminal ConfiguredValue="1.4">
+                        <ConfigurableMethodTerminal ConfiguredValue="1.3">
                             <Terminal Id="Port" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="0 0 0 0" />
                         </ConfigurableMethodTerminal>
                         <ConfigurableMethodTerminal>
