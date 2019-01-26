@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_054_RotationSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Input Number" DisplayName="Input Number" Direction="Input" Identification="Identification_279_OutputNumberDegrees.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Input Number1" DisplayName="Input Number1" Direction="Input" Identification="Identification_008_Numeric.png" DataType="Single" DefaultValue="1" />
+        <ParamInfo Name="Input Number2" DisplayName="Input Number2" Direction="Input" Identification="Identification_202_Speed_Plus50.png" DataType="Single" DefaultValue="75" />
+        <ParamInfo Name="Input Number3" DisplayName="" Direction="Input" Identification="Identification_515_Port.png" DataType="Single" DefaultValue="3" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

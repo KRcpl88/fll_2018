@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_058_UltrasonicSensor">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description />
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="distance cm" DisplayName="distance cm" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="78.8" />
+        <ParamInfo Name="angle" DisplayName="angle" Direction="Input" Identification="Identification_279_OutputNumberDegrees.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="speed" DisplayName="speed" Direction="Input" Identification="Identification_202_Speed_Plus50.png" DataType="Single" DefaultValue="-75" Configuration="SliderVertical.custom" MinValue="-100" MaxValue="0" />
+        <ParamInfo Name="giro port" DisplayName="giro port" Direction="Input" Identification="Identification_515_Port.png" DataType="Single" DefaultValue="3" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
